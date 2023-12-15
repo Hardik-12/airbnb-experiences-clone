@@ -1,0 +1,75 @@
+.navbar-section{
+  height: 70px;
+  padding: 22px 30px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.airbnb-icon{
+  height: 28px;
+  width: 85px;  
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.hero-img{
+  align-self: center;
+  max-width: 400px;
+}
+
+
+.hero-experiences{
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+  
+}
+
+.hero-experiences-header{
+  font-size: 40px;
+  
+  margin-bottom: 0;
+}
+
+.hero-experiences-para{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+.card-section{
+  width: 175px;
+  font-size: 12px;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card-stats{
+  display: flex;
+  align-items: center;
+}
+
+
+.gray{
+  color: #918E9B;
+}
+
+
+.bold{
+  font-weight: bold;
+}
+
+.card-star{
+  height: 14px;
+  width: 14px;
+}
+
+.card-title{
+  font-size: 0.75rem;
+}
