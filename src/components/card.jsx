@@ -1,36 +1,22 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import IMAGES from "../assets/images";
 
 
 
 
-export default function Card(){
+export default function Card(props){
     return (
-        // <section className="card-section">
-        //     <img src={IMAGES.image3} alt="" className="card-img" />
-        //     <div className="card-stats">
-        //         <img className="card-star" src={IMAGES.image4} alt='star-image' />
-        //         <small className="card-rating">5.0</small>
-        //         <small className='gray'>(6) • </small>
-        //         <small className="gray">&nbsp;USA</small>
-        //     </div>
-        //     <h2 className="card-title">Life Lessons with Katie Zaferes</h2>
-        //     <p className="card-cost"><small className="bold">From $136</small> / person</p>
-        // </section>
-
-        
-        <div className="contact-card">
-            <img src={IMAGES.image2} alt="Image not available" />
-            <h3>Mr. Whiskerson</h3>
-            <div className="info-group">
-                <img src={IMAGES.image4} alt="" />
-                <p>(212) 555-1234</p>
+        <section className="card-section">
+            <img src={props.img1} alt="" className="card-img" />
+            <div className="card-stats">
+                <img className="card-star" src={props.img2} alt='star-image' />
+                <small className="card-rating">{props.rating}</small>
+                <small className='gray'>{(props.reviewCount)} • </small>
+                <small className="gray">&nbsp;{props.country}</small>
             </div>
-            <div className="info-group">
-                <img src={IMAGES.image4} alt="" />
-                <p>hard1234@gmail.com</p>
-            </div>
-        </div>
+            <h2 className="card-title">{props.title}</h2>
+            <p className="card-cost"><small className="bold">From ${props.price}</small> / person</p>
+        </section>
     )
 }
